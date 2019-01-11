@@ -24,24 +24,21 @@ elif comp == 2:
 	comp = 'Paper'
 	time.sleep(0.6)
 	print('Paper')
-elif comp == 3:
-	comp = 'Gun'
-	time.sleep(0.6)
-	print('Gun')
-else:
+
+else comp == 3:
 	comp = 'Scissors'
 	time.sleep(0.7)
 	print('Scissors')
 
-	
+
 if user == 'Rock' or 'rock' and comp == 'Rock':
 	print('Go again')
-elif user == 'Scissors'  or 'scissors' and comp == 'Gun':
-	print('You Lost sorry.')
-elif user == 'Rock' or 'rock' and comp == 'Gun':
-	print('You Lost sorry.')
-elif user == 'Paper' or 'paper' and comp == 'Gun':
-	print('You Lost sorry.')
+elif user == 'Scissors'  or 'scissors' and comp == 'tie':
+	print('You tied.')
+elif user == 'Rock' or 'rock' and comp == 'tie':
+	print('You tied.')
+elif user == 'Paper' or 'paper' and comp == 'tie':
+	print('You tied.')
 elif user == 'Rock' or 'rock' and comp == 'Paper':
 	print('You Lost sorry.')
 elif user == 'Rock' or 'rock' and comp == 'Scissors':
